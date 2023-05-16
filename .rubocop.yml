@@ -1,0 +1,36 @@
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - Gemfile
+    - config/puma.rb
+    - config/environments/production.rb
+    - test/channels/application_cable/connection_test.rb
+    - test/test_helper.rb
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/SpecialGlobalVars:
+  Enabled: false
+
+Rails/Present:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 200
+
+Metrics/CyclomaticComplexity:
+  Max: 30
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Metrics/MethodLength:
+  Max: 20
